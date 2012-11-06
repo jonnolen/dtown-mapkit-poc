@@ -10,4 +10,5 @@
 
 @interface DTViewController : UIViewController
 
+-(IBAction)mapIt:(id)sender;
 @end

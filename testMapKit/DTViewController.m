@@ -7,6 +7,7 @@
 //
 
 #import "DTViewController.h"
+#import <MapKit/MapKit.h>
 
 @interface DTViewController ()
 
@@ -26,4 +27,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)mapIt:(id)sender{
+    CLGeocoder *geocoder = [CLGeocoder new];
+    
+    [geocoder geocodeAddressString:@"5255 Winthrop Ave, Indianapolis, IN 46220"
+                 completionHandler:^(NSArray *placemarks, NSError *err){
+                     if (err){
+                         NSLog(@"BIFFED");
+                     }
+                     else{
+                         if (placemarks && placemarks.count > 0){
+                             [self throwUpAMap:placemarks[0]];
+                         }
+                     }
+                 }];
+}
+
+-(void)throwUpAMap:(CLPlacemark *)placemark{
+    MKPlacemark *place = [[MKPlacemark alloc] initWithPlacemark:placemark];
+    
+    MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:place];
+    
+    [mapItem openInMapsWithLaunchOptions:nil];
+}
 @end
