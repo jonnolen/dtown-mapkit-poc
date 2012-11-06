@@ -32,7 +32,7 @@
 -(IBAction)mapIt:(id)sender{
     CLGeocoder *geocoder = [CLGeocoder new];
     
-    [geocoder geocodeAddressString:@"5255 Winthrop Ave, Indianapolis, IN 46220"
+    [geocoder geocodeAddressString:@"5255 Winthrop Ave Indianapolis IN 46220"
                  completionHandler:^(NSArray *placemarks, NSError *err){
                      if (err){
                          NSLog(@"BIFFED");
@@ -48,7 +48,7 @@
 -(IBAction)mapItTheHardWay:(id)sender{
     CLGeocoder *geocoder = [CLGeocoder new];
     
-    [geocoder geocodeAddressString:@"5255 Winthrop Ave, Indianapolis, IN 46220"
+    [geocoder geocodeAddressString:@"5255 Winthrop Ave Indianapolis IN 46220"
                  completionHandler:^(NSArray *placemarks, NSError *err){
                      if (err){
                          NSLog(@"BIFFED");
