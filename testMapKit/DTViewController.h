@@ -11,4 +11,5 @@
 @interface DTViewController : UIViewController
 
 -(IBAction)mapIt:(id)sender;
+-(IBAction)mapItTheHardWay:(id)sender;
 @end

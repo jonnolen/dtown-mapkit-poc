@@ -20,6 +20,7 @@
 		FC1ADB621648902A0006083E /* DTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1ADB611648902A0006083E /* DTViewController.m */; };
 		FC1ADB69164890970006083E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1ADB68164890970006083E /* MapKit.framework */; };
 		FC1ADB72164896390006083E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1ADB71164896390006083E /* CoreLocation.framework */; };
+		FC1ADB741648982A0006083E /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1ADB731648982A0006083E /* AddressBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		FC1ADB611648902A0006083E /* DTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTViewController.m; sourceTree = "<group>"; };
 		FC1ADB68164890970006083E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FC1ADB71164896390006083E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FC1ADB731648982A0006083E /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1ADB741648982A0006083E /* AddressBook.framework in Frameworks */,
 				FC1ADB72164896390006083E /* CoreLocation.framework in Frameworks */,
 				FC1ADB69164890970006083E /* MapKit.framework in Frameworks */,
 				FC1ADB461648902A0006083E /* UIKit.framework in Frameworks */,
@@ -62,6 +65,7 @@
 		FC1ADB361648902A0006083E = {
 			isa = PBXGroup;
 			children = (
+				FC1ADB731648982A0006083E /* AddressBook.framework */,
 				FC1ADB71164896390006083E /* CoreLocation.framework */,
 				FC1ADB68164890970006083E /* MapKit.framework */,
 				FC1ADB4B1648902A0006083E /* testMapKit */,
